@@ -48,12 +48,9 @@ function App() {
     setSelectedGenre(genre);
   }
 
-  function handleSearchQueryChange(event) {
-    setSearchQuery(event.target.value);
-  }
-
   const handleSearch = (event) => {
     setMovies(event);
+    setSearchQuery(event.target.value);
     setSelectedMovie(null);
   };
 
